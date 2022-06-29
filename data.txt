@@ -1,0 +1,427 @@
+From a transaction hash, we get the transaction, 
+from the transaction we get the block hash, 
+from the block hash we get the timestamp
+
+Transaction:
+From
+Value
+
+Block:
+Timestamp of the event
+
+
+
+
+
+Block  {
+   "baseFeePerGas": 7,
+   "difficulty": "0",
+   "extraData": "0x",
+   "gasLimit": 30000000,
+   "gasUsed": 689223,
+   "hash": "0xe2ffa68266a5a77c7a761d0adf78c2efa6c1379bf9de076047f5a88cd340a7ac",
+   "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008008000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000200000000000000000000000000000000000000000000000000000000000000200000010000000000000000000000200000000000000400000000000000000000000000000000000040000000000004000000000000000001000000000000000080000000000000000000000000000000000000000000000000",
+   "miner": "0x25c4a76E7d118705e7Ea2e9b7d8C59930d8aCD3b",
+   "mixHash": "0xb963579594a4d814a77fcaefd54c3c4b205b1980973f4e86360008d033afb732",
+   "nonce": "0x0000000000000000",
+   "number": 12395399,
+   "parentHash": "0x5a2011e73cc60c26fcbbe5e9512af9495db28cddffa7207a7de01a2ddb9c01bf",
+   "receiptsRoot": "0x6c04adfc886cface700ddc746b3c3a2595f8f94950eee72f8656319c5a84e305",
+   "sha3Uncles": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+   "size": 2961,
+   "stateRoot": "0xbb93f54fcaf8daf8ba0ff7b38c4274c8d095105ca68f584ec9731ac21f7c6d13",
+   "timestamp": 1655250000,
+   "totalDifficulty": "50000820485795157",
+   "transactions": [
+      "0x2026b1a417519ef11916e7bac64916ef79e31cdb86e9fbc32029e2edc6a7f7b8",
+      "0x1c0e8daf4ef6a09a0ae6532fb992becb9c87d897359dee60d01944f51ffdd024",
+      "0xa02d7e1c65965dd19e4b906bfe16ec451808cd71a68730d9b96a19bfe223dc73",
+      "0xcbd7f493b1ffed7fd8a81c4c1f6889be796987fc4e7d0ec91d93ca319b033858",
+      "0x3391669fe2a3aa03fcf233d69fe1e5e1ec9e977faf40c4e6d16a76a8465b3682",
+      "0x413a45e48cd583874e639a5e59a7e320fae2c81d711005dfbbdc9ca2a9e453f9",
+      "0x5eae2fb66b817fdd3cd70b1461dd949e1bfd57e418304fbcad74ee78e40f7884",
+      "0x1d9525e087deed4caf4983357d6d815521ea620fcdd1169baaee9cca7aef681d",
+      "0x0dd688fefa5e8a13bdc03eff3640b62ef8600f3dbc7da2795ddd7d70e4ed8b49",
+      "0xf1715fb14b7eddb4555acd6e8be3364850f86e0eee8a06f328f225f48990e485",
+      "0x32aa6050c3f9e717ca419441e49396a073035598af47733df4e1978186b87aed",
+      "0xeea75302d8503a968abd1786099951135e46048b264e9195d5da40deeb0c344b"
+   ],
+   "transactionsRoot": "0x7d9475bbf3fe35b885454ac7c19e8ef65b152e6d319690fa01526960c9b49b63",
+   "uncles": []
+}
+
+Transaction {
+   "accessList": [],
+   "blockHash": "0x37b3a896d85027141004f3a77357b67306e4abb4cbab8eacb60277d94bd3aad2",
+   "blockNumber": 12475343,
+   "chainId": "0x3",
+   "from": "0xc897066f04C6b91E940E64E546cA25322E41708e",
+   "gas": 3000000,
+   "gasPrice": "2500000009",
+   "hash": "0x56cf31e3f584ebb8cd980c56e1b426eabc43aa4a203840f2ea12df0b159fcb9a",
+   "input": "0x11610c25",
+   "maxFeePerGas": "2500000018",
+   "maxPriorityFeePerGas": "2500000000",
+   "nonce": 43,
+   "r": "0x3912cbfb282fc44043f3debdf64c7ea0925bec87fe0e6eb6b347507fb375835f",
+   "s": "0x6b27b5dfaa1bb63667bf2c3d94c37dca62ee41e84b683c376c603ac47b099280",
+   "to": "0x3037118CA9e0261B59aeb1A2ca8e84fddfCF9F9E",
+   "transactionIndex": 12,
+   "type": 2,
+   "v": "0x1",
+   "value": "100000000000000000"
+}
+
+
+
+[
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "previousAdmin",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "newAdmin",
+          "type": "address"
+        }
+      ],
+      "name": "AdminChanged",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "beacon",
+          "type": "address"
+        }
+      ],
+      "name": "BeaconUpgraded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "punter",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "betId",
+          "type": "uint256"
+        }
+      ],
+      "name": "Bet",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "Closed",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint8",
+          "name": "version",
+          "type": "uint8"
+        }
+      ],
+      "name": "Initialized",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "Reset",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "implementation",
+          "type": "address"
+        }
+      ],
+      "name": "Upgraded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "winner",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "value",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "betId",
+          "type": "uint256"
+        }
+      ],
+      "name": "Winner",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "bet",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "betId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "currentStatus",
+      "outputs": [
+        {
+          "components": [
+            {
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "addr",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amount",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "bool",
+                  "name": "isWinner",
+                  "type": "bool"
+                }
+              ],
+              "internalType": "struct LotteryV5.PunterBet[]",
+              "name": "punterBets",
+              "type": "tuple[]"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalPrizeMoney",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "isDrawn",
+              "type": "bool"
+            }
+          ],
+          "internalType": "struct LotteryV5.Status",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "draw",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getBalance",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getBetId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTotalPunters",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "initialize",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "openForBets",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "prizeMoney",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "proxiableUUID",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "reset",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "newBetId",
+          "type": "uint256"
+        }
+      ],
+      "name": "setBetId",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newImplementation",
+          "type": "address"
+        }
+      ],
+      "name": "upgradeTo",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newImplementation",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "upgradeToAndCall",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "version",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ]
